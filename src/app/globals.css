@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-jakarta);
+}
+
+@theme {
+  /* Brighter, clean background and surfaces instead of heavy beige */
+  --color-velora-bg: #FFFFFF;
+  --color-velora-surface: #F8FAF6;
+  --color-velora-card: #FFFFFF;
+
+  /* Your exact palette mapped cleanly */
+  --color-velora-primary: #0A3323;   /* Dark green */
+  --color-velora-moss: #839958;      /* Moss green */
+  --color-velora-beige: #F7F4D5;     /* Beige (use sparingly for highlights) */
+  --color-velora-accent: #D3968C;    /* Rosy brown */
+  --color-velora-teal: #105666;      /* Midnight green */
+
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF; /* Crisp bright base */
+  color: #0A3323;            /* Deep dark green for crisp typography */
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
